@@ -1,0 +1,10 @@
+# OAuth secrets (copy from OAuth.env.example)
+OAuth.env
+
+# Xcode
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# macOS
+.DS_Store

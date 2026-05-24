@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		092F60A6F2004AE6931C05C9 /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355484FCD61C4E71B20025B1 /* KeychainStore.swift */; };
+		1083D626B66344CBB5FD82CA /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9D0059C17847EEB874576E /* SyncService.swift */; };
+		173E90788008459FB78680E5 /* GmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4835C3090C034D19A0DC23CB /* GmailService.swift */; };
+		231C1280E596469C99F2F822 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7058B595AC43A99F4A56EE /* InboxRowView.swift */; };
+		3ECF8129DD074C97A7F1570F /* InboxItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C129CBCDB5A4548BA5527F8 /* InboxItem.swift */; };
+		48C2D0B5194943809D7C432B /* ConnectedSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B890DA8032E644BCABE909E8 /* ConnectedSource.swift */; };
+		571273AB70704614944D3701 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5709B7A264A4015BD59EF24 /* RootView.swift */; };
+		623B79974E234898A1D723F0 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCAF735C43E4ED0B86D459D /* PreviewData.swift */; };
+		6CFB82B397E04142B79EF61F /* SourcesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C8EA7250D4798A632EB13 /* SourcesViewModel.swift */; };
+		6E3986E6A9F44EFC87850C7E /* PriorityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A812DADDB941E4BFC903D8 /* PriorityService.swift */; };
+		832D0CC6A697435F9D674D8E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE862428E994D1E8F95CF02 /* SettingsView.swift */; };
+		860C9144174B4F9BB71A4881 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D167752B394257B0A052EF /* Enums.swift */; };
+		8C6C31044DBB4044BEEDC03E /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227A9BBAA9AA4C3ABE62D413 /* InboxView.swift */; };
+		946A3A5AA0A1439F81EC8834 /* UnifiedInboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F8EC85172B40EBB9AB5BC7 /* UnifiedInboxApp.swift */; };
+		A6F53B745583420591EE4A14 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A683B676064414BED73C1A /* Formatters.swift */; };
+		B30A69EC15224CEE8FF09E76 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC747E6AF35C4E438D73CF80 /* InboxViewModel.swift */; };
+		B8898E5FFA8040A3A4C9271A /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFE57FE0C63440E9DD5E075 /* ItemDetailView.swift */; };
+		BFDD34A9A5754A418728B292 /* SourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742CAE64E0CA46208A7D2BD2 /* SourcesView.swift */; };
+		DEC25C69AF09401FA576356F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688B46DC7F34B068E6715F7 /* OnboardingView.swift */; };
+		E91FD1FAA83648F584AE11ED /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B9CC2F7C8440948866178C /* GoogleAuthService.swift */; };
+		F260C08CE4A142E3A84482E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6C0309E42F04BFC9433182C /* Assets.xcassets */; };
+		A1B2C3D4E5F6478990ABCDEF /* OAuth.env in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6478990ABCDE0 /* OAuth.env */; };
+		A2B3C4D5E6F7488990ABCDE2 /* API.env in Resources */ = {isa = PBXBuildFile; fileRef = A2B3C4D5E6F7488990ABCDE1 /* API.env */; };
+		B3C4D5E6F74889901234562 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4D5E6F74889901234561 /* APIConfig.swift */; };
+		B3C4D5E6F74889901234564 /* BackendAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4D5E6F74889901234563 /* BackendAPI.swift */; };
+		B3C4D5E6F74889901234566 /* BackendSessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4D5E6F74889901234565 /* BackendSessionStore.swift */; };
+		F3B9D18C43F54DF2A345C855 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48D19E20BB3431BA3525337 /* SettingsViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04A683B676064414BED73C1A /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		15D167752B394257B0A052EF /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		1CCAF735C43E4ED0B86D459D /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		227A9BBAA9AA4C3ABE62D413 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		355484FCD61C4E71B20025B1 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+		4835C3090C034D19A0DC23CB /* GmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailService.swift; sourceTree = "<group>"; };
+		4C129CBCDB5A4548BA5527F8 /* InboxItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxItem.swift; sourceTree = "<group>"; };
+		4CFE57FE0C63440E9DD5E075 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
+		5D0C8EA7250D4798A632EB13 /* SourcesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesViewModel.swift; sourceTree = "<group>"; };
+		742CAE64E0CA46208A7D2BD2 /* SourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesView.swift; sourceTree = "<group>"; };
+		7688B46DC7F34B068E6715F7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		89F8EC85172B40EBB9AB5BC7 /* UnifiedInboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedInboxApp.swift; sourceTree = "<group>"; };
+		B890DA8032E644BCABE909E8 /* ConnectedSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedSource.swift; sourceTree = "<group>"; };
+		BB9D0059C17847EEB874576E /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
+		C5709B7A264A4015BD59EF24 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		C6C0309E42F04BFC9433182C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1B2C3D4E5F6478990ABCDE0 /* OAuth.env */ = {isa = PBXFileReference; lastKnownFileType = text; path = OAuth.env; sourceTree = "<group>"; };
+		A2B3C4D5E6F7488990ABCDE1 /* API.env */ = {isa = PBXFileReference; lastKnownFileType = text; path = API.env; sourceTree = "<group>"; };
+		B3C4D5E6F74889901234561 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		B3C4D5E6F74889901234563 /* BackendAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendAPI.swift; sourceTree = "<group>"; };
+		B3C4D5E6F74889901234565 /* BackendSessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackendSessionStore.swift; sourceTree = "<group>"; };
+		C92A128C3169493089903CF4 /* UnifiedInbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnifiedInbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7058B595AC43A99F4A56EE /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		DCE862428E994D1E8F95CF02 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E48D19E20BB3431BA3525337 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		F7B9CC2F7C8440948866178C /* GoogleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthService.swift; sourceTree = "<group>"; };
+		F9A812DADDB941E4BFC903D8 /* PriorityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityService.swift; sourceTree = "<group>"; };
+		FC747E6AF35C4E438D73CF80 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21F342D31115481BBEB4E46D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		065FCE4692A34E3EBC81C80B /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				CD7058B595AC43A99F4A56EE /* InboxRowView.swift */,
+				227A9BBAA9AA4C3ABE62D413 /* InboxView.swift */,
+				4CFE57FE0C63440E9DD5E075 /* ItemDetailView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
+		08F1A6A7045146DA96428F2C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DCE862428E994D1E8F95CF02 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1371BFCC22514AB894FD67CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B890DA8032E644BCABE909E8 /* ConnectedSource.swift */,
+				15D167752B394257B0A052EF /* Enums.swift */,
+				4C129CBCDB5A4548BA5527F8 /* InboxItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B1808E5AB6B4994A7C5ECA0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7688B46DC7F34B068E6715F7 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1FCFBDF56FB84E7F9C4CC926 /* UnifiedInbox */ = {
+			isa = PBXGroup;
+			children = (
+				950B46E1F7AE41EAAAEE4477 /* App */,
+				1371BFCC22514AB894FD67CE /* Models */,
+				4E08B784FF204EA282E07A38 /* Services */,
+				690F82D5BCD34B8C842B2553 /* Utilities */,
+				BECA294D659441E6BE4432E5 /* ViewModels */,
+				88EA5786E0D04DF4BCEE09D8 /* Views */,
+				D01CEB924D444B0697E663E6 /* Resources */,
+			);
+			path = UnifiedInbox;
+			sourceTree = "<group>";
+		};
+		4E08B784FF204EA282E07A38 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3C4D5E6F74889901234561 /* APIConfig.swift */,
+				B3C4D5E6F74889901234563 /* BackendAPI.swift */,
+				B3C4D5E6F74889901234565 /* BackendSessionStore.swift */,
+				4835C3090C034D19A0DC23CB /* GmailService.swift */,
+				F7B9CC2F7C8440948866178C /* GoogleAuthService.swift */,
+				355484FCD61C4E71B20025B1 /* KeychainStore.swift */,
+				F9A812DADDB941E4BFC903D8 /* PriorityService.swift */,
+				BB9D0059C17847EEB874576E /* SyncService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		690F82D5BCD34B8C842B2553 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				04A683B676064414BED73C1A /* Formatters.swift */,
+				1CCAF735C43E4ED0B86D459D /* PreviewData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		714784A017DA436DAB94E6F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C92A128C3169493089903CF4 /* UnifiedInbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88EA5786E0D04DF4BCEE09D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				065FCE4692A34E3EBC81C80B /* Inbox */,
+				1B1808E5AB6B4994A7C5ECA0 /* Onboarding */,
+				08F1A6A7045146DA96428F2C /* Settings */,
+				F7D3C946CFE2477B92FB210D /* Sources */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E5F2E2E422C4531A35FDF87 = {
+			isa = PBXGroup;
+			children = (
+				1FCFBDF56FB84E7F9C4CC926 /* UnifiedInbox */,
+			);
+			sourceTree = "<group>";
+		};
+		950B46E1F7AE41EAAAEE4477 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C5709B7A264A4015BD59EF24 /* RootView.swift */,
+				89F8EC85172B40EBB9AB5BC7 /* UnifiedInboxApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BECA294D659441E6BE4432E5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FC747E6AF35C4E438D73CF80 /* InboxViewModel.swift */,
+				E48D19E20BB3431BA3525337 /* SettingsViewModel.swift */,
+				5D0C8EA7250D4798A632EB13 /* SourcesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D01CEB924D444B0697E663E6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2B3C4D5E6F7488990ABCDE1 /* API.env */,
+				C6C0309E42F04BFC9433182C /* Assets.xcassets */,
+				A1B2C3D4E5F6478990ABCDE0 /* OAuth.env */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7D3C946CFE2477B92FB210D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				742CAE64E0CA46208A7D2BD2 /* SourcesView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C286BE546A3542238E9973CF /* UnifiedInbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1E0FDD5D2C74A8D97BD85D1 /* Build configuration list for PBXNativeTarget "UnifiedInbox" */;
+			buildPhases = (
+				F20442E81EEC4DCB89C48ED0 /* Sources */,
+				97A9D1977B2F421AA7B2D8D5 /* Resources */,
+				21F342D31115481BBEB4E46D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnifiedInbox;
+			productName = UnifiedInbox;
+			productReference = C92A128C3169493089903CF4 /* UnifiedInbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB71DAB4BF8C43D9A2426F24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 2E193FAAB01443A69FFABB22 /* Build configuration list for PBXProject "UnifiedInbox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E5F2E2E422C4531A35FDF87;
+			productRefGroup = 714784A017DA436DAB94E6F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C286BE546A3542238E9973CF /* UnifiedInbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97A9D1977B2F421AA7B2D8D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B3C4D5E6F7488990ABCDE2 /* API.env in Resources */,
+				F260C08CE4A142E3A84482E3 /* Assets.xcassets in Resources */,
+				A1B2C3D4E5F6478990ABCDEF /* OAuth.env in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F20442E81EEC4DCB89C48ED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				571273AB70704614944D3701 /* RootView.swift in Sources */,
+				946A3A5AA0A1439F81EC8834 /* UnifiedInboxApp.swift in Sources */,
+				48C2D0B5194943809D7C432B /* ConnectedSource.swift in Sources */,
+				860C9144174B4F9BB71A4881 /* Enums.swift in Sources */,
+				3ECF8129DD074C97A7F1570F /* InboxItem.swift in Sources */,
+				B3C4D5E6F74889901234562 /* APIConfig.swift in Sources */,
+				B3C4D5E6F74889901234564 /* BackendAPI.swift in Sources */,
+				B3C4D5E6F74889901234566 /* BackendSessionStore.swift in Sources */,
+				173E90788008459FB78680E5 /* GmailService.swift in Sources */,
+				E91FD1FAA83648F584AE11ED /* GoogleAuthService.swift in Sources */,
+				092F60A6F2004AE6931C05C9 /* KeychainStore.swift in Sources */,
+				6E3986E6A9F44EFC87850C7E /* PriorityService.swift in Sources */,
+				1083D626B66344CBB5FD82CA /* SyncService.swift in Sources */,
+				A6F53B745583420591EE4A14 /* Formatters.swift in Sources */,
+				B30A69EC15224CEE8FF09E76 /* InboxViewModel.swift in Sources */,
+				F3B9D18C43F54DF2A345C855 /* SettingsViewModel.swift in Sources */,
+				6CFB82B397E04142B79EF61F /* SourcesViewModel.swift in Sources */,
+				231C1280E596469C99F2F822 /* InboxRowView.swift in Sources */,
+				8C6C31044DBB4044BEEDC03E /* InboxView.swift in Sources */,
+				B8898E5FFA8040A3A4C9271A /* ItemDetailView.swift in Sources */,
+				DEC25C69AF09401FA576356F /* OnboardingView.swift in Sources */,
+				832D0CC6A697435F9D674D8E /* SettingsView.swift in Sources */,
+				BFDD34A9A5754A418728B292 /* SourcesView.swift in Sources */,
+				623B79974E234898A1D723F0 /* PreviewData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01F31802B4054D87AE3958EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		828CB6E1E48A4DE292D13DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9F32ADFD9F9642A5AD9E5645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Unified Inbox";
+				INFOPLIST_KEY_CFBundleURLTypes = "{\n    CFBundleURLName = Google;\n    CFBundleURLSchemes =     (\n        \"com.googleusercontent.apps.353322230272-q7ngtk1k3d7312rgrrpddl9spn0ql4ie\"\n    );\n}";
+				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsLocalNetworking = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unifiedinbox.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC87EDFB588E46DFB34B22C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Unified Inbox";
+				INFOPLIST_KEY_CFBundleURLTypes = "{\n    CFBundleURLName = Google;\n    CFBundleURLSchemes =     (\n        \"com.googleusercontent.apps.353322230272-q7ngtk1k3d7312rgrrpddl9spn0ql4ie\"\n    );\n}";
+				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsLocalNetworking = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.unifiedinbox.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E193FAAB01443A69FFABB22 /* Build configuration list for PBXProject "UnifiedInbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				828CB6E1E48A4DE292D13DF5 /* Debug */,
+				01F31802B4054D87AE3958EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A1E0FDD5D2C74A8D97BD85D1 /* Build configuration list for PBXNativeTarget "UnifiedInbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F32ADFD9F9642A5AD9E5645 /* Debug */,
+				EC87EDFB588E46DFB34B22C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB71DAB4BF8C43D9A2426F24 /* Project object */;
+}
